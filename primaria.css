@@ -1,0 +1,233 @@
+/*
+primaria.css -- The CSS stylesheet for the output
+install.pl -- Main installation script for the LiturgiScript package
+Copyright (C) 2024  Sophia Elizabeth Shapira
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
+:root {
+	--base-page-color: #fdcc3a;
+	--for-text-bg-color: #ffffff;
+	--for-instruct-bg-color: #ffffff;
+	--for-instruct-tx-color: #ff0000;
+	--group-of-sect-color: #fee69d;
+}
+
+body {
+	background-color: var(--base-page-color);
+}
+
+div.titlebox {
+	margin: 30px;
+	padding: 10px;
+	background-color: var(--for-text-bg-color);
+	text-align: center;
+	border-radius: 20px;
+}
+
+div.bigtitle {
+	margin: 10px;
+	font-size: 250%;
+	font-weight: bold;
+}
+
+div.spgtitle {
+	margin: 10px;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+div.linksection {
+	margin: 30px;
+	padding: 10px;
+	background-color: var(--for-text-bg-color);
+	text-align: center;
+	border-radius: 20px;
+}
+
+div.datelink {
+	margin: 10px;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+div.hour-link-box {
+	margin: 10px;
+	padding: 10px;
+	background-color: var(--group-of-sect-color);
+	text-align: center;
+	border-radius: 20px;
+}
+
+div.hour-link {
+	margin: 20px;
+	padding: 10px;
+	background-color: var(--for-text-bg-color);
+	font-weight: bold;
+	font-size: 180%;
+	border-radius: 20px;
+}
+
+div.maxim-box {
+	margin: 30px;
+	padding: 10px;
+	background-color: var(--for-text-bg-color);
+	text-align: center;
+	border-radius: 20px;
+}
+
+div.instruct-block {
+	margin: 30px;
+	padding: 10px;
+	background-color: var(--for-instruct-bg-color);
+	color: var(--for-instruct-tx-color);
+	font-size: 140%;
+	text-align: center;
+	border-radius: 20px;
+}
+
+div.maxim-id {
+	margin: 10px;
+	font-size: 110%;
+}
+
+div.maxim-en {
+	margin: 10px;
+	font-size: 180%;
+}
+
+div.maxim-announce {
+	margin: 10px;
+	font-size: 165%;
+}
+
+div.maxim-gr {
+	margin: 10px;
+	font-size: 150%;
+}
+
+div.maxim-cred {
+	margin: 10px;
+	margin-bottom: 2px;
+	font-size: 70%;
+}
+
+div.hymn-box {
+	margin: 10px;
+	padding: 5px;
+	background-color: var(--for-text-bg-color);
+	text-align: center;
+	border-radius: 20px;
+}
+
+div.hymn-cite {
+	margin: 10px;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+div.hymn-main {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+div.hymn-mn02 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.versest {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+p.verseln {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 150%;
+	padding-left: 40%;
+	text-indent: -60%;
+}
+
+div.daily_nav {
+	margin: 10px;
+	padding: 5px;
+	background-color: var(--for-text-bg-color);
+	text-align: center;
+	border-radius: 20px;
+}
+
+table.daily_nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+td.nav_connect {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+td.nav_item {
+	font-size: 130%;
+}
+
+div.txtlcn-box {
+	margin: 10px;
+	padding: 5px;
+	background-color: var(--for-text-bg-color);
+	text-align: center;
+	border-radius: 20px;
+}
+
+div.txtlcn-cite {
+	margin: 10px;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+div.txtlcn-primary {
+	margin: 10px;
+}
+
+p.txt_prose {
+	margin: 20px;
+	text-align: left;
+	text-indent: 5%;
+	font-size: 150%;
+}
+
+div.txt_verse_seg {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+p.txt_verse_ln {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 150%;
+	padding-left: 40%;
+	text-indent: -40%;
+}
+
+div.txtlcn-anonc {
+	margin: 10px;
+	font-size: 165%;
+	font-style: italic;
+}
+
