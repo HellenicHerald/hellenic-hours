@@ -21,14 +21,17 @@
 :subload:opening:rclc/an-hour-open-page.skd:
 :subload:closing:rclc/an-hour-close-page.skd:
 
-:set:_x:../:
-:cmset:_y:cat "${X_RES_BASE}/info/lc-delphic.cat":
-:apnd:_y:_x:
-:setp:_x:/main.idx:
-:loadvsmp:maxim:2024-01-05:1:0:_x:
+:subload:load-delphic:rclc/load-delphic.skd:
+:subrun:load-delphic:
 
-:loadsmp:clc01:2024-01-08:1:0:../res/bedtime-res/main.idx:
-
+:::loadsmp:clc01:2024-01-08:1:0:../res/bedtime-res/main.idx:
+:set:_a:2024-01-08:
+:set:_b:1:
+:set:_c:0:
+:set:_d:../lcconf/resources.cnf:
+:lookup:_d:bedtime-res:
+:setp:_d:/main.idx:
+:loadvvsmp:clc01:_a:_b:_c:_d:
 
 :subload:delphic-cn:rclc/maxim.skd:
 :subload:delphic:rclc/maxim-in-hour.skd:
