@@ -17,11 +17,9 @@
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 
-:set:_x:../:
-:cmset:_y:cat "${X_RES_BASE}/info/lc-delphic.cat":
-:apnd:_y:_x:
-:setp:_x:/main.idx:
-:loadvsmp:maxim:2024-01-05:1:0:_x:
+
+:subload:load-delphic:rclc/load-delphic.skd:
+:subrun:load-delphic:
 
 
 :-:<html>

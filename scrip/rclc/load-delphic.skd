@@ -1,0 +1,13 @@
+
+:local:_a:_b:_c:_d:
+:clear:maxim:
+
+:set:_a:2024-01-02:
+:set:_b:1:
+:set:_c:0:
+:set:_d:../../lcconf/resources.cnf:
+:lookup:_d:delphic:
+:setp:_d:/main.idx:
+:loadvvsmp:maxim:_a:_b:_c:_d:
+
+

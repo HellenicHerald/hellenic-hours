@@ -21,15 +21,41 @@
 :subload:opening:rclc/an-hour-open-page.skd:
 :subload:closing:rclc/an-hour-close-page.skd:
 
-:set:_x:../:
-:cmset:_y:cat "${X_RES_BASE}/info/lc-delphic.cat":
-:apnd:_y:_x:
-:setp:_x:/main.idx:
-:loadvsmp:maxim:2024-01-05:1:0:_x:
 
-:loadsmp:orphic1:2024-01-07:2:0:../res/orphic/main.idx:
-:loadsmp:orphic2:2024-01-07:2:1:../res/orphic/main.idx:
-:loadsmp:enchir1:2024-02-01:1:0:../res/enchiridion-rs01/main.idx:
+:subload:load-delphic:rclc/load-delphic.skd:
+:subrun:load-delphic:
+
+
+
+::loadsmp:orphic1:2024-01-07:2:0:../res/orphic/main.idx:
+::loadsmp:orphic2:2024-01-07:2:1:../res/orphic/main.idx:
+
+:set:_a:2024-01-07:
+:set:_b:2:
+:set:_c:0:
+:set:_d:../lcconf/resources.cnf:
+:lookup:_d:orphic:
+:setp:_d:/main.idx:
+:loadvvsmp:orphic1:_a:_b:_c:_d:
+
+:set:_a:2024-01-07:
+:set:_b:2:
+:set:_c:1:
+:set:_d:../lcconf/resources.cnf:
+:lookup:_d:orphic:
+:setp:_d:/main.idx:
+:loadvvsmp:orphic2:_a:_b:_c:_d:
+
+
+
+::loadsmp:enchir1:2024-02-01:1:0:../res/enchiridion-rs01/main.idx:
+:set:_a:2024-02-01:
+:set:_b:1:
+:set:_c:0:
+:set:_d:../lcconf/resources.cnf:
+:lookup:_d:enchiridion-rs01:
+:setp:_d:/main.idx:
+:loadvvsmp:enchir1:_a:_b:_c:_d:
 
 
 :subload:delphic:rclc/maxim-in-hour.skd:
