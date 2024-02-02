@@ -1,0 +1,130 @@
+
+# daily-main.skd - The main page of any specific day of the Hellenic Hours
+# Copyright (C) 2024  Sophia Elizabeth Shapira
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+:set:_x:../:
+:cmset:_y:cat "${X_RES_BASE}/info/lc-delphic.cat":
+:apnd:_y:_x:
+:setp:_x:/main.idx:
+:loadvsmp:maxim:2024-01-05:1:0:_x:
+
+
+:-:<html>
+:-:<head>
+:-:<link rel="stylesheet" href="primaria.css" />
+:-:<meta name="viewport" content="width=device-width, initial-scale=1" />
+:-:<meta charset="UTF-8" />
+
+:**:<title>:
+:env:X_T_DAYOW_AB:
+:**:, :
+:env:X_T_NMONTH_AB:
+:**: :
+:env:X_T_DAYOM:
+:**:, :
+:env:X_T_YEAR:
+:-:: Hellenic Hours</title>
+:**:<meta property="og:title" content="Hellenic Hours:
+:if:envis:X_MODE_TYPE:test:
+  :**: - Beta:
+:fi:
+:-:" />
+:-:</head><body>
+
+:-:<div class = "titlebox">
+:-:<div class = "bigtitle">
+:**:<a href = "index.html">Hellenic Hours:
+:if:envis:X_MODE_TYPE:test:
+  :**: - Beta:
+:fi:
+:-:</a>
+:-:</div>
+:-:<div class = "spgtitle">
+:env:X_T_DAYOW_FL:
+:**:, :
+:env:X_T_NMONTH_FL:
+:**: :
+:env:X_T_DAYOM:
+:**:, :
+:env:X_T_YEAR:
+:-:
+:-:</div>
+:-:</div>
+
+
+:subload:dailynav:rclc/daily-navigation.skd:
+:set:_pgsf:-main:
+:subrun:dailynav:
+
+
+:-:<div class = "maxim-box">
+:-:<div class = "maxim-id">
+:**:Delphic Maxim #:
+:show:maxim:id:
+:-:
+:-:</div><div class = "maxim-en">
+:show:maxim:en:
+:-:
+:-:</div><div class = "maxim-gr">
+:show:maxim:gr:
+:-:
+:-:</div></div>
+
+
+:-:<div class = "hour-link-box">
+
+
+
+:-:<div class = "hour-link">
+:**:<a href = "pz-:
+:env:X_T_DAYCODE:
+:**:-h01.html">Morning</a>:
+:-:</div>
+
+
+::-:</div>
+::-:<div class = "hour-link-box">
+
+
+:-:<div class = "hour-link">
+:**:<a href = "pz-:
+:env:X_T_DAYCODE:
+:**:-h02.html">Mid-Morning</a>:
+:-:</div>
+
+
+::-:</div>
+::-:<div class = "hour-link-box">
+
+
+:-:<div class = "hour-link">
+:**:<a href = "pz-:
+:env:X_T_DAYCODE:
+:**:-h06.html">Bedtime</a>:
+:-:</div>
+
+
+
+:-:</div>
+
+
+
+
+:-:</body>
+:-:</html>
+

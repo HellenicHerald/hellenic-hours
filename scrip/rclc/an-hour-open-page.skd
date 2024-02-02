@@ -1,0 +1,82 @@
+
+# rclc/an-hour-open-page.skd - Opens the HTML of a page in the Hellenic Hours
+# Copyright (C) 2024  Sophia Elizabeth Shapira
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+
+:subload:dailynav:daily-navigation.skd:
+
+
+
+
+
+
+:-:<html>
+:-:<head>
+:-:<link rel="stylesheet" href="primaria.css" />
+:-:<meta name="viewport" content="width=device-width, initial-scale=1" />
+:-:<meta charset="UTF-8" />
+
+
+:**:<title>:
+:lit:_hr_title:
+:if:envis:X_MODE_TYPE:test:
+  :**: Beta:
+:fi:
+:**:: :
+:env:X_T_DAYOW_AB:
+:**:, :
+:env:X_T_NMONTH_AB:
+:**: :
+:env:X_T_DAYOM:
+:**:, :
+:env:X_T_YEAR:
+:-::</title>
+:**:<meta property="og:title" content="Hellenic Hours:
+:if:envis:X_MODE_TYPE:test:
+  :**: Beta:
+:fi:
+:-:" />
+:-:</head><body>
+
+:-:<div class = "titlebox">
+:-:<div class = "bigtitle">
+:**:Hellenic :
+:lit:_hr_title:
+:if:envis:X_MODE_TYPE:test:
+  :**: - Beta:
+:fi:
+:-:
+:-:</div>
+:-:<div class = "spgtitle">
+:**:<a href = "pz-:
+:env:X_T_DAYCODE:
+:**:-main.html">:
+:env:X_T_DAYOW_FL:
+:**:, :
+:env:X_T_NMONTH_FL:
+:**: :
+:env:X_T_DAYOM:
+:**:, :
+:env:X_T_YEAR:
+:-:</a>
+:-:</div>
+:-:</div>
+
+
+:subrun:dailynav:
+

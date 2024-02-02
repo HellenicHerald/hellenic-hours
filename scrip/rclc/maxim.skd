@@ -1,5 +1,5 @@
 
-# run-for-site.sh - This is script is the first invoked when I build the stable version of the output site
+# rclc/maxim.skd - Displays a Delphic maxim without any announcement for its place in the ritual
 # Copyright (C) 2024  Sophia Elizabeth Shapira
 #
 # This program is free software; you can redistribute it and/or modify
@@ -16,37 +16,19 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-date
 
-cd "$(dirname "${0}")" || exit
-
-X_MODE_TYPE='stable'
-export X_MODE_TYPE
-
-X_OUTPUT="$(pwd)/out"
-X_SCRIP="$(pwd)/scrip"
-X_RES_BASE="$(pwd)"
-export X_OUTPUT
-export X_SCRIP
-export X_RES_BASE
-
-cp out/primaria.css .
-rm -rf out
-mkdir out
-cp primaria.css out/.
-
-X_DESTIN_DIR="$( cd out && pwd )"
-export X_DESTIN_DIR
-
-
-
-sh "${X_RES_BASE}/prep-res.sh"
-
-
-liturgscr-gener -scf "${X_SCRIP}/main-dx.skd" > out/index.html
-
-date
-
-( ( sh clean.sh ) & ) > /dev/null 2> /dev/null
-
+:-:<div class = "maxim-box">
+:-:<div class = "maxim-id">
+:**:Delphic Maxim #:
+:show:maxim:id:
+:-:
+:-:</div><div class = "maxim-en">
+:show:maxim:en:
+:-:
+:-:</div><div class = "maxim-gr">
+:show:maxim:gr:
+:-:
+:-:</div><div class = "maxim-cred">
+:-:Sourced from <a href = "https://en.wikipedia.org/wiki/Delphic_maxims" target = "_blank" rel = "noopener">Wikipedia</a>.
+:-:</div></div>
 

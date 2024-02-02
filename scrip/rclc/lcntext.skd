@@ -1,0 +1,133 @@
+
+# rclc/lcntext.skd - Outputs a lesson selected from an ancient book of wisdom
+# Copyright (C) 2024  Sophia Elizabeth Shapira
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+
+:if:has:_x:ct01:
+  :-:<div class = "txtlcn-box">
+  :-:<div class = "txtlcn-cite">
+  :**:<a href = ":
+  :show:_x:ur01:
+  :**:" target = "_blank" rel = "noopener">:
+  :show:_x:ct01:
+  :-:</a>
+  :-:</div>
+    :if:has:_x:srcnom01:
+    :-:<div class = "txtlcn-anonc">A Lesson From
+    :show:_x:srcnom01:
+    :-:</div>
+  :fi:
+  :-:<div class = "txtlcn-primary">
+  :show:_x:cn01:
+  :-:</div>
+  :-:<div class = "txtlcn-anonc">Thus Ends the Lesson</div>
+  :-:</div>
+:fi:
+
+
+
+:if:has:_x:ct02:
+  :-:<div class = "txtlcn-box">
+  :-:<div class = "txtlcn-cite">
+  :**:<a href = ":
+  :show:_x:ur02:
+  :**:" target = "_blank" rel = "noopener">:
+  :show:_x:ct02:
+  :-:</a>
+  :-:</div>
+    :if:has:_x:srcnom02:
+    :-:<div class = "txtlcn-anonc">Another Lesson From
+    :show:_x:srcnom02:
+    :-:</div>
+  :fi:
+  :-:<div class = "txtlcn-primary">
+  :show:_x:cn02:
+  :-:</div>
+  :-:<div class = "txtlcn-anonc">Thus Ends the Lesson</div>
+  :-:</div>
+:fi:
+
+
+
+:if:has:_x:ct03:
+  :-:<div class = "txtlcn-box">
+  :-:<div class = "txtlcn-cite">
+  :**:<a href = ":
+  :show:_x:ur03:
+  :**:" target = "_blank" rel = "noopener">:
+  :show:_x:ct03:
+  :-:</a>
+  :-:</div>
+    :if:has:_x:srcnom03:
+    :-:<div class = "txtlcn-anonc">Another Lesson From
+    :show:_x:srcnom03:
+    :-:</div>
+  :fi:
+  :-:<div class = "txtlcn-primary">
+  :show:_x:cn03:
+  :-:</div>
+  :-:<div class = "txtlcn-anonc">Thus Ends the Lesson</div>
+  :-:</div>
+:fi:
+
+
+
+:if:has:_x:ct04:
+  :-:<div class = "txtlcn-box">
+  :-:<div class = "txtlcn-cite">
+  :**:<a href = ":
+  :show:_x:ur04:
+  :**:" target = "_blank" rel = "noopener">:
+  :show:_x:ct04:
+  :-:</a>
+  :-:</div>
+    :if:has:_x:srcnom04:
+    :-:<div class = "txtlcn-anonc">Another Lesson From
+    :show:_x:srcnom04:
+    :-:</div>
+  :fi:
+  :-:<div class = "txtlcn-primary">
+  :show:_x:cn04:
+  :-:</div>
+  :-:<div class = "txtlcn-anonc">Thus Ends the Lesson</div>
+  :-:</div>
+:fi:
+
+
+
+:if:has:_x:ct05:
+  :-:<div class = "txtlcn-box">
+  :-:<div class = "txtlcn-cite">
+  :**:<a href = ":
+  :show:_x:ur05:
+  :**:" target = "_blank" rel = "noopener">:
+  :show:_x:ct05:
+  :-:</a>
+  :-:</div>
+    :if:has:_x:srcnom05:
+    :-:<div class = "txtlcn-anonc">Another Lesson From
+    :show:_x:srcnom05:
+    :-:</div>
+  :fi:
+  :-:<div class = "txtlcn-primary">
+  :show:_x:cn05:
+  :-:</div>
+  :-:<div class = "txtlcn-anonc">Thus Ends the Lesson</div>
+  :-:</div>
+:fi:
+
+

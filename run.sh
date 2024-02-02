@@ -1,6 +1,5 @@
 
 # run.sh - This is script is the first invoked when I build the beta version of the output site
-# install.pl -- Main installation script for the LiturgiScript package
 # Copyright (C) 2024  Sophia Elizabeth Shapira
 #
 # This program is free software; you can redistribute it and/or modify
@@ -39,7 +38,7 @@ cp primaria.css out/.
 X_DESTIN_DIR="$( cd out && pwd )"
 export X_DESTIN_DIR
 
-sh "${X_RES_BASE}/prep-res.sh"
+#sh "${X_RES_BASE}/prep-res.sh"
 
 liturgscr-gener -scf "${X_SCRIP}/main-dx.skd" > out/index.html
 
