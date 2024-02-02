@@ -1,0 +1,89 @@
+
+# daily-h02.skd - Mid-Morning ritual for the Hellenic Hours
+# Copyright (C) 2024  Sophia Elizabeth Shapira
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+:set:_pgsf:-h02:
+:set:_hr_title:Mid-Morning:
+:subload:opening:rclc/an-hour-open-page.skd:
+:subload:closing:rclc/an-hour-close-page.skd:
+
+:set:_x:../:
+:cmset:_y:cat "${X_RES_BASE}/info/lc-delphic.cat":
+:apnd:_y:_x:
+:setp:_x:/main.idx:
+:loadvsmp:maxim:2024-01-05:1:0:_x:
+
+:loadsmp:orphic1:2024-01-07:2:0:../res/orphic/main.idx:
+:loadsmp:orphic2:2024-01-07:2:1:../res/orphic/main.idx:
+:loadsmp:enchir1:2024-02-01:1:0:../res/enchiridion-rs01/main.idx:
+
+
+:subload:delphic:rclc/maxim-in-hour.skd:
+:subload:hymnseg:rclc/hymnseg.skd:
+:subload:offering:rclc/offering-slot.skd:
+:subload:lcntxt:rclc/lcntext.skd:
+
+
+
+
+:subrun:opening:
+
+
+:set:_nvg:dl01:
+:set:_mxan:Let us begin by calling to mind the words of wisdom:
+:setp:_mxan: written on the walls of the temple at Delphi.:
+:subrun:delphic:
+
+
+
+:set:_nvg:hm01:
+:cp:orphic1:_x:
+:subrun:hymnseg:
+
+
+:subrun:offering:
+
+
+:set:_nvg:encr:
+:cp:enchir1:_x:
+:subrun:lcntxt:
+
+
+:set:_nvg:dl02:
+:set:_mxan:Let us now meditate upon the words of wisdom:
+:setp:_mxan: written on the walls of the temple at Delphi.:
+:subrun:delphic:
+
+
+
+
+:set:_nvg:hm02:
+:cp:orphic2:_x:
+:subrun:hymnseg:
+
+
+
+:set:_nvg:dl03:
+:set:_mxan:As we continue about our day,:
+:setp:_mxan: let us heed the words of wisdom:
+:setp:_mxan: written on the walls of the temple at Delphi.:
+:subrun:delphic:
+
+
+:subrun:closing:
+
+
