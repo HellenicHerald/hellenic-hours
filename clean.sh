@@ -19,6 +19,8 @@
 
 cd "$(dirname "${0}")" || exit
 
+rm -rf *.tar *.gz *.tgz *.zip
+
 
 #echo "Waiting 2:" && sleep 5
 #echo "Waiting 1:" && sleep 5
