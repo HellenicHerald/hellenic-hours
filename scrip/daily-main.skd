@@ -21,6 +21,8 @@
 :subload:load-delphic:rclc/load-delphic.skd:
 :subrun:load-delphic:
 
+:subload:delphic-cn:rclc/maxim.skd:
+
 
 :-:<html>
 :-:<head>
@@ -70,18 +72,10 @@
 :subrun:dailynav:
 
 
-:-:<div class = "maxim-box">
-:-:<div class = "maxim-id">
-:**:Delphic Maxim #:
-:show:maxim:id:
-:-:
-:-:</div><div class = "maxim-en">
-:show:maxim:en:
-:-:
-:-:</div><div class = "maxim-gr">
-:show:maxim:gr:
-:-:
-:-:</div></div>
+
+
+:set:_nvg:dl01:
+:subrun:delphic-cn:
 
 
 :-:<div class = "hour-link-box">
