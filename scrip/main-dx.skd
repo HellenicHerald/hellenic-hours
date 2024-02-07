@@ -44,8 +44,17 @@
 :-:</div>
 
 :-:<div class = "linksection">
+:-:<div class = "head_date_lnk" id = "todaylink">
+:-:</div>
+:-:</div>
+
+:-:<div class = "linksection">
 :sh:perl scrip/fulldex.pl
 :-:</div>
+
+:-:<script>
+:sh:cat scrip/res/cur-date-tag.js
+:-:</script>
 
 :-:</body>
 :-:</html>

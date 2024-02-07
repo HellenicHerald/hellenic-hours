@@ -63,6 +63,12 @@ div.datelink {
 	font-size: 150%;
 }
 
+div.head_date_lnk {
+	margin: 10px;
+	font-weight: bold;
+	font-size: 160%;
+}
+
 div.hour-link-box {
 	margin: 10px;
 	padding: 10px;
