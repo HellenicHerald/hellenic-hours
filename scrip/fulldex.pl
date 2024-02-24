@@ -83,7 +83,7 @@ $vari_maxo = 20;
   
   if ( $lc_mode eq 'stable' )
   {
-    $vari_maxo = 60;
+    $vari_maxo = 100;
   }
   
   if ( $lc_mode eq 'month' )
