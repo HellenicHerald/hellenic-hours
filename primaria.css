@@ -236,3 +236,21 @@ div.txtlcn-anonc {
 	font-style: italic;
 }
 
+div.hymn-out-all {
+	border-top: solid;
+	border-width: 2px;
+	border-color: var(--base-page-color);
+	padding: 10px;
+}
+
+div.hymn-out-lead {
+	font-size: 140%;
+	text-align: center;
+}
+
+div.hymn-out-follow {
+	font-size: 140%;
+	text-align: center;
+	font-style: italic;
+}
+
