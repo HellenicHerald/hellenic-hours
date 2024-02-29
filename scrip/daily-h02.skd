@@ -59,7 +59,7 @@
 
 
 :subload:delphic:rclc/maxim-in-hour.skd:
-:subload:hymnseg:rclc/hymnseg.skd:
+:subload:hymnseg:rclc/hymnseg-orn.skd:
 :subload:offering:rclc/offering-slot.skd:
 :subload:lcntxt:rclc/lcntext.skd:
 
