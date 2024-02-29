@@ -83,7 +83,13 @@ $vari_maxo = 20;
   
   if ( $lc_mode eq 'stable' )
   {
-    $vari_maxo = 100;
+    my $lc2_cm;
+    $lc2_cm = 'liturgscr-lookup';
+    #$lc2_cm .= ' "${X_RES_BASE}/lcconf/resources.cnf"';
+    $lc2_cm .= ' "${X_RES_BASE}/lcconf/prefs.cnf"';
+    $lc2_cm .= ' daysinset';
+    $vari_maxo = `$lc2_cm`; chomp($vari_maxo);
+    if ( $vari_maxo eq '' ) { $vari_maxo = 100; }
   }
   
   if ( $lc_mode eq 'month' )
